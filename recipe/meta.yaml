@@ -1,6 +1,6 @@
 {% set name = "backports.csv" %}
-{% set version = "1.0.4" %}
-{% set sha256sum = "d810b20839270df6261405286d3e864fc35a388217715d09049bee38373894b7" %}
+{% set version = "1.0.5" %}
+{% set sha256sum = "8c421385cbc6042ba90c68c871c5afc13672acaf91e1508546d6cda6725ebfc6" %}
 
 package:
   name: {{ name }}
@@ -12,6 +12,7 @@ source:
   sha256: {{ sha256sum }}
 
 build:
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
