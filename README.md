@@ -14,9 +14,7 @@ Summary: Backport of Python 3's csv module for Python 2
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/backports.csv-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/backports.csv-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/backports.csv-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/backports.csv-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/backports.csv-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/backports-csv-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/backports.csv-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/backports.csv-feedstock)
 
 Current release info
 ====================
