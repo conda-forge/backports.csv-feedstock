@@ -20,9 +20,11 @@ requirements:
   build:
     - python
     - setuptools
+    - backports
 
   run:
     - python
+    - backports
 
 test:
   imports:
