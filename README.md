@@ -14,12 +14,15 @@ Summary: Backport of Python 3's csv module for Python 2
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/backports.csv-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/backports.csv-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/backports.csv-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/backports.csv-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/backports.csv/badges/version.svg)](https://anaconda.org/conda-forge/backports.csv)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/backports.csv/badges/downloads.svg)](https://anaconda.org/conda-forge/backports.csv)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-backports.csv-green.svg)](https://anaconda.org/conda-forge/backports.csv) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/backports.csv.svg)](https://anaconda.org/conda-forge/backports.csv) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/backports.csv.svg)](https://anaconda.org/conda-forge/backports.csv) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/backports.csv.svg)](https://anaconda.org/conda-forge/backports.csv) |
 
 Installing backports.csv
 ========================
