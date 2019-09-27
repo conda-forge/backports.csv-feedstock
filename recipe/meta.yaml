@@ -1,6 +1,6 @@
 {% set name = "backports.csv" %}
 {% set version = "1.0.7" %}
-{% set sha256sum = "1277dfff73130b2e106bf3dd347adb3c5f6c4340882289d88f31240da92cbd6d" %}
+{% set sha256sum = "538e04f193710a7fd2522168e65daa1fd7089766b2721dc5621c9b205c7a285e" %}
 
 package:
   name: {{ name }}
