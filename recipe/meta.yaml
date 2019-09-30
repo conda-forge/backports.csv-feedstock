@@ -7,17 +7,17 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256sum }}
 
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - backports
@@ -33,9 +33,14 @@ test:
 about:
   home: https://github.com/ryanhiebert/backports.csv/
   license: PSFL 2
+  license_family: PSF
   license_file: LICENSE.rst
   summary: Backport of Python 3's csv module for Python 2
+  doc_url: "https://pypi.org/project/backports.csv/"
+  dev_url: "https://github.com/ryanhiebert/backports.csv"
+
 
 extra:
   recipe-maintainers:
     - rmax
+    - oblute
