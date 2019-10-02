@@ -1,6 +1,5 @@
 {% set name = "backports.csv" %}
 {% set version = "1.0.7" %}
-{% set sha256sum = "1277dfff73130b2e106bf3dd347adb3c5f6c4340882289d88f31240da92cbd6d" %}
 
 package:
   name: {{ name }}
@@ -8,22 +7,19 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256sum }}
+  sha256: 1277dfff73130b2e106bf3dd347adb3c5f6c4340882289d88f31240da92cbd6d
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
+    - python >3.3
     - pip
-    - python
-    - setuptools
-    - backports
-
   run:
     - python
-    - backports
 
 test:
   imports:
@@ -32,14 +28,11 @@ test:
 about:
   home: https://github.com/ryanhiebert/backports.csv/
   license: PSFL 2
-  license_family: PSF
   license_file: LICENSE.rst
-  summary: Backport of Python 3's csv module for Python 2
-  doc_url: "https://pypi.org/project/backports.csv/"
-  dev_url: "https://github.com/ryanhiebert/backports.csv"
-
+  summary: 'Backport of Python 3's csv module for Python 2'
 
 extra:
   recipe-maintainers:
     - rmax
     - oblute
+    - benhuff
